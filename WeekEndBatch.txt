@@ -1,0 +1,25 @@
+sudo yum update -y
+sudo yum install nginx -y
+sudo service nginx start
+sudo service nginx status
+
+
+EBS 
+
+lsblk
+df -h
+sudo file -s /dev/xvdf
+sudo mkfs -t xfs /dev/xvdf
+sudo mkdir /data
+sudo mount /dev/xvdf /data
+
+
+
+EFS
+UPDATE THE MACHINE 
+sudo yum -y install nfs-utils
+sudo mkdir efs
+Use the mount command
+cd efs
+ls
+sudo touch 1.txt 2.txt 3.txt
